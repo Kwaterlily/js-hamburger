@@ -1,9 +1,20 @@
 // mostrare / nascondere il menu principale (mobile) cliccando sull' icona hamburger-menu
-var  clickMenu = document.getElementById(".fas");
+const  showClickMenu = document.querySelector(".fa-bars")
+const  closeClickMenu = document.querySelector(".fa-times")
 
-clickMenu.addEventListener('click', 
+showClickMenu.addEventListener('click', 
 
     function () {
-        clickMenu.classList.add(" .hamburger-menu .hamburger-menu .active");
+        document.querySelector(".hamburger-menu").className = ".hamburger-menu active";
+        // clickMenu.style.display = "block";
+        // document.classList.add(".hamburger-menu") + (".hamburger-menu .active");
+    }
+);
+closeClickMenu.addEventListener('click', 
+
+    function () {
+        // document.querySelector(".hamburger-menu").className = ".hamburger-menu";
+        closeClickMenu.style.display = "none"; 
+        // document.classList.add(".hamburger-menu") + (".hamburger-menu .active");
     }
 );
