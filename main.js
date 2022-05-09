@@ -5,16 +5,14 @@ const  closeClickMenu = document.querySelector(".fa-times")
 showClickMenu.addEventListener('click', 
 
     function () {
-        document.querySelector(".hamburger-menu").className = ".hamburger-menu active";
-        // clickMenu.style.display = "block";
-        // document.classList.add(".hamburger-menu") + (".hamburger-menu .active");
+        document.querySelector(".hamburger-menu").className = "hamburger-menu active hamburger-menu ul hamburger-menu ul li a";
+        // showClickMenu.style.display = "block";
     }
 );
 closeClickMenu.addEventListener('click', 
 
     function () {
-        // document.querySelector(".hamburger-menu").className = ".hamburger-menu";
-        closeClickMenu.style.display = "none"; 
-        // document.classList.add(".hamburger-menu") + (".hamburger-menu .active");
+        document.querySelector(".hamburger-menu"). className = "hamburger-menu";
+        // closeClickMenu.style.display = "none"; 
     }
 );
